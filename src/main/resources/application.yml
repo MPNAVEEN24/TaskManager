@@ -1,0 +1,19 @@
+spring:
+  profile: container
+  datasource:
+    url: jdbc:mysql://192.168.99.100:3306/taskdb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: abcdef
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+      
+server.port: 9000
+
+
+
+
+
